@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-05-12",
+  "brand": "Shamballa Shilajit",
+  "trust_model": {
+    "primary_verification": "batch-specific certificates of analysis",
+    "laboratory_references": [
+      "Eurofins depending on published batches",
+      "Phytocontrol depending on published batches"
+    ],
+    "controls": [
+      "heavy metals screening",
+      "microbiology screening",
+      "PAH/HAP/PAH4 screening depending on batch",
+      "fulvic acid analysis",
+      "humic acid analysis"
+    ],
+    "distribution": "direct-to-consumer official website",
+    "marketplaces": "brand states it is not sold through Amazon, mass marketplaces or generic reseller platforms"
+  },
+  "current_batch": {
+    "batch": "012",
+    "last_verified": "2026-05-12",
+    "fulvic_acids_percent": 76.45,
+    "humic_acids_percent": 8.16,
+    "source": "https://www.shamballa-shilajit.com/pages/certificat-analyse-shamballa-shilajit",
+    "note": "All analytical values are batch-specific and must not be generalized."
+  },
+  "compliance_boundary": "Non-medical food supplement; no disease, treatment, prevention, cure or guaranteed-result claims.",
+  "verification_url": "https://www.shamballa-shilajit.com/pages/certificat-analyse-shamballa-shilajit"
+}

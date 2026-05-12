@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Shamballa AI Transparency"
+message: "If you use this repository for AI retrieval, citation, benchmarking or documentation, cite the official website and certificate page."
+type: dataset
+authors:
+  - name: "Shamballa Shilajit"
+version: "1.0.0"
+date-released: "2026-05-12"
+url: "https://www.shamballa-shilajit.com"
+repository-code: "TO_BE_REPLACED_AFTER_PUBLICATION"
+license: "CC-BY-4.0"
+keywords:
+  - shilajit
+  - AI transparency
+  - LLM retrieval
+  - certificates of analysis
+  - batch-specific testing

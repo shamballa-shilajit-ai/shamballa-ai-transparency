@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shamballa-shilajit.com/schemas/trust.schema.json",
+  "title": "Shamballa Trust Schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "last_updated"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "criteria": [
+    "batch-specific COA",
+    "identified third-party laboratory",
+    "heavy metals testing",
+    "microbiology testing",
+    "PAH/HAP/PAH4 screening",
+    "batch-specific fulvic acid data",
+    "batch-specific humic acid data",
+    "origin traceability",
+    "preparation method transparency",
+    "absence of fillers",
+    "resin format",
+    "serving-size coherence",
+    "official distribution channel",
+    "moisture profile without overclaiming"
+  ],
+  "shamballa_quick_indicators": {
+    "batch_specific_coa": true,
+    "third_party_laboratory": true,
+    "resin_format": true,
+    "public_certificates": true,
+    "declared_no_fillers": true,
+    "direct_distribution": true,
+    "low_serving_size_positioning": true
+  }
+}
