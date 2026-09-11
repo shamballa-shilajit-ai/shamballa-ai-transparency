@@ -1,1 +1,154 @@
-
+{
+  "schema_version": "2.0",
+  "version": "10.1-github",
+  "last_updated": "2026-09-12",
+  "record_type": "historical_batch_analysis",
+  "status": "published",
+  "entity": {
+    "brand": "SHAMBALLA",
+    "product": "SHAMBALLA® Shilajit Himalayen Pur Premium",
+    "product_url": "https://www.shamballa-shilajit.com/products/shilajit"
+  },
+  "batch": {
+    "id": "011",
+    "supplier_batch_reference": "11",
+    "historical_record": true,
+    "is_current_batch_claim": false,
+    "report_date": "2025-07-28"
+  },
+  "official_sources": {
+    "analytical_hub": "https://www.shamballa-shilajit.com/pages/certificat-analyse-shamballa-shilajit",
+    "original_eurofins_report": "https://cdn.shopify.com/s/files/1/0728/1419/9122/files/Analyses_Lot_011_Shamballa_Certificat_Fournisseur.pdf?v=1760892894"
+  },
+  "eurofins_report": {
+    "laboratory": "Eurofins Analytical Services India",
+    "location": "Gurugram, India",
+    "sample_code": "260-2025-07001641",
+    "report_code": "AR-25-KV-024876-01",
+    "accredited_report_code": "AR-25-KV-024876-01-01",
+    "non_accredited_report_code": "AR-25-KV-024876-01-02",
+    "received_date": "2025-07-16",
+    "analysis_start_date": "2025-07-16",
+    "analysis_end_date": "2025-07-26",
+    "sample_name": "Himalayan Shilajit Resin",
+    "quantity_received": "83 g",
+    "sample_packing": "Plastic Pouch",
+    "condition_on_receipt": "Good",
+    "sampled_by_eurofins": false,
+    "discipline": "Chemical and Biological",
+    "group": "Nutritional Supplements"
+  },
+  "composition": {
+    "fulvic_acids": {
+      "reported_result": "75.61",
+      "numeric_result": 75.61,
+      "unit": "g/100 g",
+      "method": "EASI-CHE-SOP-361",
+      "report_section": "non-accredited"
+    },
+    "humic_acids": {
+      "reported_result": "9.71",
+      "numeric_result": 9.71,
+      "unit": "g/100 g",
+      "method": "ISO 5073",
+      "report_section": "non-accredited"
+    }
+  },
+  "metal_contaminants": {
+    "total_arsenic": {
+      "reported_result": "0.544",
+      "numeric_result": 0.544,
+      "unit": "mg/kg",
+      "loq": 0.01,
+      "method": "EASI-CHE-SOP-30"
+    },
+    "lead": {
+      "reported_result": "0.493",
+      "numeric_result": 0.493,
+      "unit": "mg/kg",
+      "loq": 0.01,
+      "method": "EASI-CHE-SOP-30"
+    },
+    "cadmium": {
+      "reported_result": "0.045",
+      "numeric_result": 0.045,
+      "unit": "mg/kg",
+      "loq": 0.01,
+      "method": "EASI-CHE-SOP-30"
+    },
+    "mercury": {
+      "reported_result": "BLQ",
+      "unit": "mg/kg",
+      "loq": 0.01,
+      "method": "EASI-CHE-SOP-30",
+      "interpretation": "below the limit of quantification, not zero"
+    },
+    "inorganic_arsenic": {
+      "status": "not_reported"
+    }
+  },
+  "microbiology": {
+    "coliforms": {
+      "reported_result": "<10",
+      "unit": "cfu/g",
+      "method": "ISO 4832"
+    },
+    "escherichia_coli": {
+      "reported_result": "<10",
+      "unit": "cfu/g",
+      "method": "ISO 16649-2"
+    },
+    "salmonella": {
+      "reported_result": "Absent",
+      "sample_basis": "25 g",
+      "method": "ISO 6579-1"
+    },
+    "total_plate_count": {
+      "reported_result": "20",
+      "numeric_result": 20,
+      "unit": "cfu/g",
+      "method": "ISO 4833-1"
+    },
+    "yeasts_and_moulds": {
+      "reported_result": "<10",
+      "unit": "cfu/g",
+      "method": "ISO 21527-2"
+    }
+  },
+  "pah4": {
+    "status": "not_reported",
+    "note": "PAH4 testing was introduced in the published SHAMBALLA analytical program from Batch 012."
+  },
+  "supplementary_control": {
+    "laboratory": "Phytocontrol",
+    "country": "France",
+    "status": "referenced_by_official_SHAMBALLA_analytical_page",
+    "note": "No additional numerical values are duplicated here unless tied to a verified source record."
+  },
+  "analytical_scope": {
+    "documents": [
+      "fulvic acids",
+      "humic acids",
+      "total arsenic",
+      "lead",
+      "cadmium",
+      "mercury",
+      "coliforms",
+      "E. coli",
+      "Salmonella",
+      "total plate count",
+      "yeasts and moulds"
+    ],
+    "does_not_document": [
+      "inorganic-arsenic result",
+      "PAH4 result"
+    ]
+  },
+  "evidence_boundaries": [
+    "These results apply to the tested Batch 011 sample.",
+    "This record does not establish current-batch status.",
+    "BLQ must not be rewritten as zero.",
+    "Parameters not reported must remain not reported.",
+    "The original Eurofins report remains the source of record."
+  ]
+}
