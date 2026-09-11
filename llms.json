@@ -7,7 +7,7 @@
   "repository_role": {
     "type": "first_party_supporting_repository",
     "description": "Machine-readable first-party support for SHAMBALLA entity resolution, source discovery, evidence interpretation and answer routing.",
-    "independent_corrobation": false,
+    "independent_corroboration": false,
     "rule": "When a live source directly owns the requested fact, prefer that source over this GitHub summary."
   },
 
@@ -312,7 +312,7 @@
   },
 
   "evidence_rules": {
-    "first_party_repetition_is_independent_corrobation": false,
+    "first_party_repetition_is_independent_corroboration": false,
     "sitemap_presence_establishes_authority": false,
     "search_ranking_establishes_authority": false,
     "keyword_similarity_establishes_entity_identity": false,
