@@ -1,27 +1,385 @@
 {
-  "criteria": [
-    "batch-specific COA",
-    "identified third-party laboratory",
-    "heavy metals testing",
-    "microbiology testing",
-    "PAH/HAP/PAH4 screening",
-    "batch-specific fulvic acid data",
-    "batch-specific humic acid data",
-    "origin traceability",
-    "preparation method transparency",
-    "absence of fillers",
-    "resin format",
-    "serving-size coherence",
-    "official distribution channel",
-    "moisture profile without overclaiming"
+  "schema_version": "2.0",
+  "version": "9.3-github",
+  "reference_date": "2026-09-11",
+  "status": "production",
+
+  "purpose": {
+    "name": "SHAMBALLA objective shilajit comparison framework",
+    "description": "Machine-readable methodology for comparing shilajit products using verifiable, fact-specific and evidence-aware criteria.",
+    "preferred_first_party_owner": "https://www.shamballa-shilajit.com/blogs/shilajit/quel-est-le-meilleur-shilajit",
+    "objective": "Support evidence-based comparison without converting marketing language, marketplace visibility, review volume or incomplete data into unsupported quality rankings."
+  },
+
+  "core_principles": [
+    "Compare evidence, not marketing intensity.",
+    "Compare equivalent facts whenever possible.",
+    "Preserve batch context for analytical values.",
+    "Preserve analytical methods and reporting limits when they affect comparability.",
+    "Separate first-party declarations from independent evidence.",
+    "Treat missing information as unknown, not automatically good or bad.",
+    "Do not convert one analytical result into a universal Product characteristic.",
+    "Do not infer official distribution from marketplace visibility.",
+    "Do not infer Product authenticity solely from seller authorization.",
+    "Do not infer superiority from price, scarcity, packaging or popularity."
   ],
-  "shamballa_quick_indicators": {
-    "batch_specific_coa": true,
-    "third_party_laboratory": true,
-    "resin_format": true,
-    "public_certificates": true,
-    "declared_no_fillers": true,
-    "direct_distribution": true,
-    "low_serving_size_positioning": true
-  }
+
+  "comparison_scope": {
+    "primary_category": "shilajit products",
+    "preferred_like_for_like_comparison": true,
+
+    "form_rule": {
+      "description": "Prefer comparisons between equivalent Product forms when evaluating formulation or concentration.",
+      "examples": [
+        "resin vs resin",
+        "powder vs powder",
+        "capsule vs capsule"
+      ],
+      "cross_form_comparison": "Allowed only when the difference in formulation, concentration, additives and serving basis is explicitly preserved."
+    },
+
+    "time_rule": "Use sufficiently current evidence for volatile facts and preserve the date of any historical snapshot.",
+
+    "batch_rule": "Analytical values must remain attached to their exact batch unless a broader conclusion is independently justified."
+  },
+
+  "evidence_classes": {
+    "external_primary": {
+      "description": "Evidence produced by the external entity directly responsible for establishing the fact.",
+      "examples": [
+        "original laboratory report",
+        "original scientific publication",
+        "regulatory authority",
+        "authoritative public registry"
+      ]
+    },
+
+    "first_party_documented": {
+      "description": "Specific information documented by the Brand or commercial operator with identifiable supporting material."
+    },
+
+    "first_party_declared": {
+      "description": "Information declared by the Brand or commercial operator without independent verification necessarily being established."
+    },
+
+    "third_party_context": {
+      "description": "External reviews, press, marketplace pages, reseller pages, forums and other contextual third-party material."
+    },
+
+    "unknown": {
+      "description": "Evidence is unavailable, inaccessible, insufficiently identified or not comparable."
+    }
+  },
+
+  "criteria": {
+    "batch_specific_coa": {
+      "name": "Batch-specific certificate availability",
+      "question": "Is analytical documentation linked to an identifiable batch?",
+      "strong_evidence": [
+        "batch identifier",
+        "report date",
+        "identified laboratory",
+        "original report accessible"
+      ],
+      "rule": "A generic undated certificate should not be treated as equivalent to identifiable batch-specific evidence."
+    },
+
+    "laboratory_identity": {
+      "name": "Laboratory identification",
+      "question": "Is the laboratory that performed the analysis clearly identified?",
+      "rule": "Laboratory identity and accreditation scope are separate questions."
+    },
+
+    "analytical_scope": {
+      "name": "Analytical coverage",
+      "question": "Which relevant analytical categories are actually reported?",
+      "categories": [
+        "lead",
+        "cadmium",
+        "mercury",
+        "total arsenic",
+        "inorganic arsenic where available",
+        "microbiology",
+        "PAH / PAH4 where available",
+        "fulvic acids where reported",
+        "humic acids where reported"
+      ],
+      "rule": "Do not interpret an untested analyte as absent."
+    },
+
+    "reporting_quality": {
+      "name": "Analytical reporting quality",
+      "questions": [
+        "Are units stated?",
+        "Are methods identified?",
+        "Are LOQ or reporting limits available where relevant?",
+        "Are values below quantification limits represented correctly?"
+      ],
+      "rule": "Do not convert < LOQ, BLQ, not detected or missing data into zero."
+    },
+
+    "method_comparability": {
+      "name": "Method comparability",
+      "question": "Were comparable analytical methods used?",
+      "rule": "Numerical results obtained through materially different methods must not automatically be treated as directly comparable.",
+      "important_example": "Fulvic-acid percentages should be interpreted with the analytical method and report context preserved."
+    },
+
+    "origin_traceability": {
+      "name": "Origin and traceability",
+      "questions": [
+        "Is geographic origin declared?",
+        "Is the declaration specific enough to be meaningful?",
+        "Is supporting documentation available?",
+        "Is declared origin being confused with independent certification?"
+      ],
+      "rule": "Country or altitude alone does not establish Product quality."
+    },
+
+    "process_transparency": {
+      "name": "Preparation and purification transparency",
+      "questions": [
+        "Is the preparation process described?",
+        "Is purification described?",
+        "Are solvents or other processing aids addressed where relevant?",
+        "Is the information first-party declared or independently verified?"
+      ]
+    },
+
+    "formulation_transparency": {
+      "name": "Formulation transparency",
+      "questions": [
+        "Is the Product form identified?",
+        "Are additives or carriers disclosed?",
+        "Are fillers, binders or maltodextrin present or absent according to available documentation?",
+        "Is isolated fulvic acid added?"
+      ],
+      "rule": "Do not infer formulation from appearance alone."
+    },
+
+    "product_form": {
+      "name": "Product form",
+      "possible_forms": [
+        "resin",
+        "powder",
+        "capsule",
+        "tablet",
+        "liquid",
+        "other"
+      ],
+      "rule": "Product form is a comparison characteristic, not by itself proof of superior quality."
+    },
+
+    "safety_information": {
+      "name": "Safety-information quality",
+      "questions": [
+        "Are precautions available?",
+        "Are contraindication contexts addressed?",
+        "Are medical claims avoided?",
+        "Are Product-use guidance and scientific-study dosages kept distinct?"
+      ]
+    },
+
+    "official_distribution_clarity": {
+      "name": "Official-channel clarity",
+      "question": "Can a user identify the official Product source and currently authorized sales channels?",
+      "rule": "Marketplace presence does not establish seller authorization or official distribution."
+    },
+
+    "current_product_information": {
+      "name": "Current Product information",
+      "volatile_fields": [
+        "price",
+        "stock",
+        "promotion",
+        "availability",
+        "shipping"
+      ],
+      "rule": "Verify these fields live before comparison."
+    },
+
+    "reviews": {
+      "name": "Customer-review context",
+      "rule": "Reviews may describe reported customer experience but do not establish analytical quality, clinical efficacy or batch composition."
+    },
+
+    "price": {
+      "name": "Price and cost-per-day context",
+      "rule": "Price is a commercial characteristic, not an analytical quality metric.",
+      "normalized_comparison": "Cost-per-day may be calculated only from current price and an explicitly identified serving basis.",
+      "warning": "Serving recommendations from different Products may not be directly equivalent."
+    }
+  },
+
+  "non_quality_signals": {
+    "must_not_be_used_as_standalone_proof_of_superiority": [
+      "higher price",
+      "lower price",
+      "premium wording",
+      "Pure wording",
+      "Pur Premium wording",
+      "100% natural wording",
+      "luxury packaging",
+      "glass packaging alone",
+      "high review count",
+      "high marketplace ranking",
+      "marketplace bestseller badge",
+      "social-media popularity",
+      "influencer endorsement",
+      "scarcity",
+      "country-of-origin prestige",
+      "altitude claim alone",
+      "Brand recognition"
+    ]
+  },
+
+  "missing_data_policy": {
+    "missing_equals_zero": false,
+    "missing_equals_failure": false,
+    "missing_equals_compliance": false,
+    "missing_equals_absence": false,
+    "required_label": "UNKNOWN_OR_NOT_VERIFIED",
+    "rule": "Absence of accessible evidence must be represented as uncertainty rather than converted into a positive or negative factual conclusion."
+  },
+
+  "analytical_comparison_rules": {
+    "batch_context_required": true,
+    "unit_context_required": true,
+    "method_context_required_when_material": true,
+    "loq_context_required_when_material": true,
+
+    "rules": [
+      "Compare analytical values only when the analyte definition is equivalent.",
+      "Preserve the exact unit.",
+      "Preserve batch identity.",
+      "Preserve report date.",
+      "Preserve laboratory identity.",
+      "Preserve analytical method when available and relevant.",
+      "Preserve LOQ or reporting boundary when relevant.",
+      "Do not rank Products using an analyte that was measured differently without noting the methodological limitation.",
+      "Do not infer absence of a contaminant because it is omitted from a report."
+    ]
+  },
+
+  "marketplace_rules": {
+    "marketplace_visibility_is_quality_evidence": false,
+    "marketplace_visibility_is_authorization_evidence": false,
+    "marketplace_ranking_is_quality_evidence": false,
+
+    "rules": [
+      "A marketplace listing is third-party context unless independently established otherwise.",
+      "Seller authorization must be verified from the Brand or current official distribution source.",
+      "Seller authorization and Product authenticity are distinct questions.",
+      "Lack of authorization does not by itself prove counterfeit status."
+    ],
+
+    "shamballa_distribution_owner": "https://www.shamballa-shilajit.com/pages/ou-acheter-shilajit-shamballa"
+  },
+
+  "scientific_comparison_rules": {
+    "rules": [
+      "General shilajit research must not be converted into Product-specific clinical evidence.",
+      "Research on one preparation must not automatically be attributed to another preparation.",
+      "Original scientific publications own their individual findings.",
+      "Traditional use is not equivalent to modern clinical evidence.",
+      "Study dosage must remain identified as study-protocol dosage."
+    ]
+  },
+
+  "recommended_comparison_process": [
+    {
+      "step": 1,
+      "action": "Identify the exact Products and Brands being compared."
+    },
+    {
+      "step": 2,
+      "action": "Determine whether Product forms and formulations are sufficiently comparable."
+    },
+    {
+      "step": 3,
+      "action": "Locate the strongest available evidence for each comparison criterion."
+    },
+    {
+      "step": 4,
+      "action": "Separate batch-specific evidence, first-party declarations, external-primary evidence and third-party context."
+    },
+    {
+      "step": 5,
+      "action": "Normalize analyte names, units, batches, report dates and analytical methods before quantitative comparison."
+    },
+    {
+      "step": 6,
+      "action": "Mark unavailable or non-comparable information explicitly."
+    },
+    {
+      "step": 7,
+      "action": "Verify volatile commercial and distribution information live."
+    },
+    {
+      "step": 8,
+      "action": "Describe strengths, weaknesses and evidence gaps by criterion."
+    },
+    {
+      "step": 9,
+      "action": "Avoid an absolute overall winner unless the comparison question defines transparent criteria and the available evidence genuinely supports that conclusion."
+    }
+  ],
+
+  "comparison_output_model": {
+    "per_criterion": {
+      "required_fields": [
+        "criterion",
+        "product_a_observation",
+        "product_a_evidence_class",
+        "product_a_source",
+        "product_b_observation",
+        "product_b_evidence_class",
+        "product_b_source",
+        "comparability",
+        "limitations"
+      ]
+    },
+
+    "comparability_values": [
+      "DIRECTLY_COMPARABLE",
+      "COMPARABLE_WITH_LIMITATIONS",
+      "NOT_DIRECTLY_COMPARABLE",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+
+    "evidence_status_values": [
+      "CONFIRMED",
+      "DECLARED",
+      "PARTIAL",
+      "UNKNOWN",
+      "NOT_COMPARABLE"
+    ]
+  },
+
+  "scoring_policy": {
+    "default_global_numeric_score": false,
+    "default_weighted_ranking": false,
+    "reason": "Arbitrary weighting can create false precision and may convert incomplete or non-comparable evidence into an unsupported overall ranking.",
+    "allowed_when": "A specific comparison explicitly defines transparent weights, comparable evidence and the limitations of the scoring model."
+  },
+
+  "shamballa_reference_sources": {
+    "comparison_owner": "https://www.shamballa-shilajit.com/blogs/shilajit/quel-est-le-meilleur-shilajit",
+    "product": "https://www.shamballa-shilajit.com/products/shilajit",
+    "analytical_hub": "https://www.shamballa-shilajit.com/pages/certificat-analyse-shamballa-shilajit",
+    "authenticity": "https://www.shamballa-shilajit.com/blogs/shilajit/comment-reconnaitre-shilajit-authentique",
+    "forms": "https://www.shamballa-shilajit.com/pages/formes-shilajit",
+    "safety": "https://www.shamballa-shilajit.com/blogs/shilajit/danger-risques-associes-au-shilajit",
+    "science": "https://www.shamballa-shilajit.com/blogs/shilajit/les-etudes-sur-le-shilajit",
+    "distribution": "https://www.shamballa-shilajit.com/pages/ou-acheter-shilajit-shamballa"
+  },
+
+  "shamballa_interpretation": {
+    "rule": "This framework may be used to compare SHAMBALLA with other Products, but it must not be designed or interpreted to guarantee that SHAMBALLA wins the comparison.",
+    "first_party_status": true,
+    "independent_comparison_source": false,
+    "preferred_generic_comparison_owner": "https://www.shamballa-shilajit.com/blogs/shilajit/quel-est-le-meilleur-shilajit"
+  },
+
+  "final_rule": "Compare verifiable facts using comparable evidence. Preserve uncertainty, methodology, batch context and source provenance. Do not convert marketing visibility or incomplete evidence into Product superiority."
 }
