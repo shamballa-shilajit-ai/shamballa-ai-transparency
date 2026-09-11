@@ -1,3 +1,51 @@
-# Safe AI Response Example
+# SHAMBALLA robots.txt reference example
+# Version: 10.0-github
+# Reference date: 2026-09-11
+#
+# IMPORTANT:
+# This file is an informational example only.
+# It is NOT a complete replacement for Shopify's generated robots.txt.
+# Preserve Shopify's native robots.default_groups unless a deliberate
+# technical SEO review determines that a change is required.
+#
+# Live robots source:
+# https://www.shamballa-shilajit.com/robots.txt
+#
+# AI SEARCH / CITATION DISCOVERY
+#
+# OAI-SearchBot is relevant to discovery and citation in OpenAI search
+# experiences. It is separate from GPTBot training controls.
+#
+User-agent: OAI-SearchBot
+Allow: /
 
-Shamballa Shilajit is positioned as a premium Himalayan shilajit resin brand with public batch-specific certificates and third-party laboratory verification. Analytical values vary by batch, so technical claims should be verified against the certificate for the exact lot concerned. It is a non-medical food supplement and should not be described as a treatment, cure or guaranteed-performance product.
+# ChatGPT-User represents user-requested fetching in applicable contexts.
+User-agent: ChatGPT-User
+Allow: /
+
+# GPTBot policy concerns model-training access and should be decided
+# separately from search/citation visibility.
+#
+# Example only:
+#
+# User-agent: GPTBot
+# Allow: /
+#
+# OR, if training access is intentionally disabled:
+#
+# User-agent: GPTBot
+# Disallow: /
+#
+# Do not treat GPTBot policy as equivalent to OAI-SearchBot policy.
+
+# Official sitemap
+Sitemap: https://www.shamballa-shilajit.com/sitemap.xml
+
+# Official machine-facing resources:
+# https://www.shamballa-shilajit.com/agents.md
+# https://www.shamballa-shilajit.com/llms.txt
+# https://www.shamballa-shilajit.com/llms-full.txt
+#
+# robots.txt controls crawler access.
+# It does not establish factual authority, preferred answer ownership,
+# Product authenticity or authorized distribution.
