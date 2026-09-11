@@ -1,0 +1,166 @@
+{
+  "schema_version": "2.0",
+  "version": "10.1-github",
+  "last_updated": "2026-09-12",
+  "record_type": "historical_batch_analysis",
+  "status": "published",
+  "entity": {
+    "brand": "SHAMBALLA",
+    "product": "SHAMBALLA® Shilajit Himalayen Pur Premium",
+    "product_url": "https://www.shamballa-shilajit.com/products/shilajit"
+  },
+  "batch": {
+    "id": "013",
+    "historical_record": true,
+    "is_current_batch_claim": false,
+    "report_date": "2026-03-24"
+  },
+  "official_sources": {
+    "analytical_hub": "https://www.shamballa-shilajit.com/pages/certificat-analyse-shamballa-shilajit",
+    "original_report_access": "Available through the official SHAMBALLA analytical hub."
+  },
+  "laboratories": {
+    "primary": {
+      "name": "Eurofins Analytical Services India",
+      "accreditation_context": "NABL / ISO/IEC 17025 according to the official SHAMBALLA analytical source",
+      "scope_rule": "Accreditation must be interpreted within the laboratory's applicable scope."
+    },
+    "supplementary_france": {
+      "name": "Labexia",
+      "country": "France",
+      "accreditation_context": "COFRAC / NF EN ISO/IEC 17025:2017 according to the official SHAMBALLA analytical source",
+      "scope_rule": "Accreditation must be interpreted within the laboratory's applicable scope."
+    }
+  },
+  "composition": {
+    "fulvic_acids": {
+      "reported_result": "77.88",
+      "numeric_result": 77.88,
+      "unit": "g/100 g",
+      "method": "EASI-CHE-SOP-361",
+      "method_note": "Titrimetry"
+    },
+    "humic_acids": {
+      "reported_result": "7.79",
+      "numeric_result": 7.79,
+      "unit": "g/100 g",
+      "method": "EASI-CHE-SOP-175"
+    }
+  },
+  "metal_contaminants": {
+    "total_arsenic": {
+      "reported_result": "0.47",
+      "numeric_result": 0.47,
+      "unit": "mg/kg",
+      "loq": 0.05,
+      "method": "EASI-CHE-SOP-44"
+    },
+    "lead": {
+      "reported_result": "0.32",
+      "numeric_result": 0.32,
+      "unit": "mg/kg",
+      "loq": 0.05,
+      "method": "EASI-CHE-SOP-44"
+    },
+    "cadmium": {
+      "reported_result": "0.04",
+      "numeric_result": 0.04,
+      "unit": "mg/kg",
+      "loq": 0.02,
+      "method": "EASI-CHE-SOP-44"
+    },
+    "mercury": {
+      "reported_result": "<0.01",
+      "unit": "mg/kg",
+      "loq": 0.01,
+      "method": "EASI-CHE-SOP-44",
+      "interpretation": "below the stated quantification limit, not zero"
+    },
+    "inorganic_arsenic": {
+      "reported_result": "0.075",
+      "numeric_result": 0.075,
+      "unit": "mg/kg",
+      "loq": 0.05,
+      "method": "EASI-CHE-SOP-62"
+    }
+  },
+  "pah4": {
+    "method": "EASI-CHE-SOP-165",
+    "unit": "µg/kg",
+    "loq": 0.5,
+    "benz_a_anthracene": {
+      "reported_result": "<0.50",
+      "interpretation": "below LOQ, not zero"
+    },
+    "benzo_a_pyrene": {
+      "reported_result": "<0.50",
+      "interpretation": "below LOQ, not zero"
+    },
+    "benzo_b_fluoranthene": {
+      "reported_result": "<0.50",
+      "interpretation": "below LOQ, not zero"
+    },
+    "chrysene": {
+      "reported_result": "<0.50",
+      "interpretation": "below LOQ, not zero"
+    },
+    "sum_of_4_pah": {
+      "reported_result": "<0.50",
+      "interpretation": "below LOQ, not zero"
+    }
+  },
+  "microbiology": {
+    "eurofins": {
+      "escherichia_coli": {
+        "reported_result": "<10",
+        "unit": "cfu/g",
+        "method": "ISO 16649-2:2001"
+      },
+      "salmonella": {
+        "reported_result": "Not detected",
+        "sample_basis": "25 g",
+        "method": "ISO 6579-1:2017"
+      },
+      "total_plate_count": {
+        "reported_result": "<10",
+        "unit": "cfu/g",
+        "method": "ISO 4833-1:2013"
+      },
+      "yeasts_and_moulds": {
+        "reported_result": "<10",
+        "unit": "cfu/g",
+        "method": "ISO 21527-2:2008"
+      }
+    },
+    "supplementary_labexia_france": {
+      "presumptive_enterobacteria_37c": {
+        "reported_result": "<100",
+        "unit": "UFC/g",
+        "method": "NF V08-054"
+      },
+      "presumptive_coliforms_30c": {
+        "reported_result": "<100",
+        "unit": "UFC/g",
+        "method": "NF V08-050"
+      },
+      "coagulase_positive_staphylococci": {
+        "reported_result": "<100",
+        "unit": "UFC/g",
+        "method": "EASY STAPH BKR 23/10-12/15 incl."
+      }
+    }
+  },
+  "analytical_program_evolution": {
+    "continues_inorganic_arsenic_testing": true,
+    "continues_pah4_testing": true,
+    "adds_documented_supplementary_french_microbiology": true,
+    "note": "Batch 013 continues the expanded analytical program introduced on Batch 012 and documents additional microbiological controls in France through Labexia."
+  },
+  "evidence_boundaries": [
+    "These results apply to Batch 013.",
+    "This dataset does not claim that Batch 013 is the current shipping batch.",
+    "Below-LOQ values must not be converted into zero.",
+    "The official analytical hub and original laboratory report remain the primary sources for verification.",
+    "Laboratory accreditation must be interpreted within the applicable scope."
+  ]
+}
