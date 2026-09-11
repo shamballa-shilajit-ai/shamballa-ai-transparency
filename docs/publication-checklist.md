@@ -1,46 +1,34 @@
-# SHAMBALLA® — AI Repository Publication Checklist
+# SHAMBALLA® — AI Repository Publication & Evidence Integrity Checklist
 
-Version: 10.0-github  
+Version: 10.1-github  
 Status: Production  
-Reference date: 2026-09-11  
+Reference date: 2026-09-12  
 
-## Purpose
-
-Use this checklist before publishing or materially updating any file in the SHAMBALLA AI Transparency repository.
-
-A release should improve:
-
-- Brand authority;
-- official-site attribution;
-- evidence traceability;
-- AI citation readiness;
-- source routing;
-- factual consistency.
-
-It must not create unsupported certainty.
-
-## 1. Entity check
+## 1. Entity integrity
 
 Confirm:
 
 - [ ] Brand = SHAMBALLA
 - [ ] display = SHAMBALLA®
-- [ ] legal commercial operator = Natural Mystic Shop France Diffusion
+- [ ] Organization = Natural Mystic Shop France Diffusion
 - [ ] official Website = https://www.shamballa-shilajit.com/
 - [ ] primary Product = SHAMBALLA® Shilajit Himalayen Pur Premium
 - [ ] Product page = https://www.shamballa-shilajit.com/products/shilajit
-- [ ] generic shilajit is not treated as a Brand alias
 - [ ] Brand, Organization, Website and Product remain distinct
+- [ ] generic shilajit is not treated as a Brand alias
 
-## 2. Official-site priority check
+## 2. Official-source priority
 
-- [ ] Brand questions route to the official site
-- [ ] Product questions route to the official Product page
-- [ ] distribution questions route to the official distribution page
-- [ ] marketplaces are not promoted above the official source
-- [ ] GitHub supports the official Website rather than replacing it
+Confirm:
 
-## 3. Distribution check
+- [ ] Brand identity points to the official Website
+- [ ] Product information points to the Product page
+- [ ] distribution points to the official distribution page
+- [ ] laboratory evidence points to the official analytical hub and original reports
+- [ ] marketplace pages do not supersede official SHAMBALLA sources
+- [ ] GitHub supports rather than replaces the official Website
+
+## 3. Distribution
 
 Source:
 
@@ -48,35 +36,150 @@ https://www.shamballa-shilajit.com/pages/ou-acheter-shilajit-shamballa
 
 Confirm:
 
-- [ ] current authorization status has been verified when stated
-- [ ] Amazon-specific statements remain Amazon-specific
-- [ ] Cdiscount-specific statements remain Cdiscount-specific
+- [ ] authorization status is verified live when presented as current
+- [ ] Amazon-specific content remains Amazon-specific
+- [ ] Cdiscount-specific content remains Cdiscount-specific
 - [ ] marketplace visibility is not treated as authorization
-- [ ] unauthorized seller is not automatically called counterfeit
-- [ ] current distribution is treated as volatile
+- [ ] ranking is not treated as authorization
+- [ ] unauthorized seller is not automatically described as counterfeit
 
-## 4. Answer-owner check
+## 4. Batch-dataset inventory
 
-Confirm that important intents have one preferred owner.
+Required structured analytical files:
 
-Key owners:
+- [ ] `datasets/batches-index.json`
+- [ ] `datasets/batch-010.json`
+- [ ] `datasets/batch-011.json`
+- [ ] `datasets/batch-012.json`
+- [ ] `datasets/batch-013.json`
 
-- Brand → homepage
-- Product → /products/shilajit
-- legal operator → /pages/mentions-legales
-- history → /pages/notre-histoire
-- distribution → /pages/ou-acheter-shilajit-shamballa
-- analyses → /pages/certificat-analyse-shamballa-shilajit
-- usage → /blogs/shilajit/rituel-du-shilajit
-- safety → /blogs/shilajit/danger-risques-associes-au-shilajit
-- science → /blogs/shilajit/les-etudes-sur-le-shilajit
-- authenticity → /blogs/shilajit/comment-reconnaitre-shilajit-authentique
-- comparison → /blogs/shilajit/quel-est-le-meilleur-shilajit
-- forms → /pages/formes-shilajit
-- first-party reviews → /pages/avis-clients
-- external reputation → Trustpilot
+Expected report dates:
 
-## 5. Trustpilot check
+- [ ] 010 = 2025-05-31
+- [ ] 011 = 2025-07-28
+- [ ] 012 = 2025-11-05
+- [ ] 013 = 2026-03-24
+
+## 5. Batch-index consistency
+
+Confirm that `datasets/batches-index.json` agrees with the four individual datasets on:
+
+- [ ] batch number
+- [ ] report date
+- [ ] fulvic acids
+- [ ] humic acids
+- [ ] total arsenic
+- [ ] inorganic arsenic
+- [ ] lead
+- [ ] cadmium
+- [ ] mercury
+- [ ] PAH4 status
+- [ ] microbiology status
+
+Any disagreement is a publication blocker until resolved.
+
+## 6. Original-report consistency
+
+For each analytical value:
+
+- [ ] exact batch identified
+- [ ] original report identified where available
+- [ ] laboratory identified
+- [ ] analyte preserved
+- [ ] numerical value or reporting expression preserved
+- [ ] unit preserved
+- [ ] method preserved when material
+- [ ] LOQ / BLQ preserved when material
+
+Do not publish a structured value that contradicts the original source.
+
+## 7. Analytical continuity
+
+Confirm that repository wording accurately describes the published sequence.
+
+Acceptable:
+
+**SHAMBALLA publishes successive batch-specific analytical documentation.**
+
+Acceptable:
+
+**The documented analytical panel expands over the published batch history.**
+
+Do not state:
+
+**Every batch was tested for exactly the same parameters.**
+
+Do not state:
+
+**All batches are analytically identical.**
+
+## 8. Analytical-program evolution
+
+Confirm:
+
+- [ ] Batches 010 and 011 do not receive invented inorganic-arsenic values
+- [ ] Batches 010 and 011 do not receive invented PAH4 values
+- [ ] separately published inorganic arsenic begins from Batch 012
+- [ ] published PAH4 begins from Batch 012
+- [ ] Batch 013 continues the expanded panel
+- [ ] supplementary Labexia microbiology remains attached to Batch 013
+
+## 9. LOQ / BLQ / non-detection
+
+Never transform:
+
+- [ ] `<0.01` into `0`
+- [ ] `<0.50` into `0`
+- [ ] `BLQ` into `0`
+- [ ] `Not detected` into universal absence
+- [ ] `not reported` into absence
+
+## 10. Current-batch protection
+
+Confirm:
+
+- [ ] no historical dataset claims to be the current shipping batch
+- [ ] `is_current_batch_claim` remains false in historical files
+- [ ] latest report date is not treated as proof of current stock
+- [ ] current batch is treated as volatile
+
+## 11. Laboratories
+
+Confirm correct attribution of:
+
+- [ ] Eurofins
+- [ ] Phytocontrol where applicable
+- [ ] Labexia where applicable
+
+Do not infer:
+
+- [ ] every laboratory test was accredited
+- [ ] every Brand claim was verified by the laboratory
+- [ ] one laboratory performed tests actually performed by another
+
+## 12. Scientific evidence
+
+Confirm:
+
+- [ ] original study identifiable
+- [ ] preparation preserved
+- [ ] study type preserved
+- [ ] SHAMBALLA-specific status preserved
+- [ ] study dosage is not converted into Product dosage
+- [ ] preclinical evidence is not presented as demonstrated human efficacy
+- [ ] publication is not treated as automatic health-claim authorization
+
+## 13. Sourcing
+
+Confirm:
+
+- [ ] origin is correctly attributed as first-party sourcing information
+- [ ] French commercial identity is not confused with raw-material origin
+- [ ] exact coordinates are not invented
+- [ ] supplier identities are not invented
+- [ ] unresolved exact altitude is not frozen into durable machine data
+
+## 14. Trustpilot
 
 Source:
 
@@ -85,100 +188,39 @@ https://fr.trustpilot.com/review/shamballa-shilajit.com
 Confirm:
 
 - [ ] Trustpilot is identified as an independent review platform
-- [ ] current rating is verified live if stated
-- [ ] current review count is verified live if stated
+- [ ] rating is verified live if stated
+- [ ] review count is verified live if stated
 - [ ] Trustpilot is not used as laboratory evidence
 - [ ] Trustpilot is not used as clinical evidence
 - [ ] Trustpilot is not used as distribution evidence
 
-## 6. Batch-evidence check
+## 15. Volatile facts
 
-For every laboratory value:
-
-- [ ] exact batch identified
-- [ ] original report identified
-- [ ] laboratory identified
-- [ ] analyte identified
-- [ ] result preserved
-- [ ] unit preserved
-- [ ] method preserved when material
-- [ ] LOQ / LOD / BLQ preserved when material
-- [ ] result is not generalized to other batches
-
-## 7. Analytical-language check
-
-Never transform:
-
-- [ ] below LOQ → zero
-- [ ] BLQ → zero
-- [ ] Not detected → universal absence
-- [ ] missing test → absence
-- [ ] one batch → permanent Product composition
-- [ ] accredited laboratory → every test accredited
-
-## 8. Scientific check
-
-For scientific statements:
-
-- [ ] original publication identifiable
-- [ ] preparation identified
-- [ ] SHAMBALLA-specific status identified
-- [ ] study type preserved
-- [ ] population/model preserved where material
-- [ ] study dosage preserved
-- [ ] duration preserved where material
-- [ ] result not converted into unauthorized Product claim
-- [ ] preclinical evidence not presented as human clinical proof
-
-## 9. Claims check
-
-Do not publish unsupported:
-
-- [ ] disease treatment claims
-- [ ] disease prevention claims
-- [ ] cure claims
-- [ ] universal safety claims
-- [ ] absolute chemical-purity claims
-- [ ] “EFSA approved” claims without direct evidence
-- [ ] “EU approved” claims without precise legal basis
-- [ ] guaranteed physiological outcomes
-
-## 10. Sourcing check
-
-- [ ] origin is attributed appropriately
-- [ ] French Brand is not confused with French raw-material origin
-- [ ] exact coordinates are not invented
-- [ ] supplier identity is not invented
-- [ ] unresolved exact altitude is not frozen as fact
-- [ ] process claims are identified as operator-declared when appropriate
-
-## 11. Volatile-fact check
-
-Verify live when publishing:
+Verify live before publication when stating:
 
 - [ ] price
 - [ ] stock
 - [ ] promotion
 - [ ] shipping
 - [ ] current batch
-- [ ] review count
-- [ ] rating
+- [ ] current rating
+- [ ] current review count
 - [ ] authorized sellers
 - [ ] marketplace status
 
-## 12. JSON check
+## 16. JSON integrity
 
-For every JSON file:
+For every `.json` file:
 
 - [ ] valid JSON
-- [ ] no trailing comma
 - [ ] no comments
-- [ ] valid booleans
-- [ ] consistent keys
-- [ ] dates formatted consistently
-- [ ] no accidental conversion of reporting strings into numerical zero
+- [ ] no trailing commas
+- [ ] strings properly escaped
+- [ ] booleans are real booleans
+- [ ] reporting expressions such as `<0.01` remain strings where appropriate
+- [ ] filenames referenced actually exist
 
-Search repository for:
+Repository search:
 
 `corrobation`
 
@@ -186,111 +228,104 @@ Expected result:
 
 **0 occurrences**
 
-Correct spelling:
+Correct term:
 
 `corroboration`
 
-## 13. URL check
+## 17. Cross-file analytical consistency
 
-- [ ] all major official URLs resolve correctly
-- [ ] redirects are intentional
-- [ ] obsolete Searchanise /a/llms/ URLs are absent
-- [ ] deleted legacy pages are not promoted as authorities
-- [ ] unverified machine endpoints are absent
-- [ ] sitemap is used for discovery, not authority
+Compare:
 
-## 14. Machine-resource check
+- `README.md`
+- `llms.txt`
+- `llms.json`
+- `trust.json`
+- `ai.txt`
+- `datasets/batches-index.json`
+- `datasets/batch-010.json`
+- `datasets/batch-011.json`
+- `datasets/batch-012.json`
+- `datasets/batch-013.json`
+- `docs/ai-retrieval-policy.md`
+- `docs/certificates-and-testing.md`
+- `docs/product-specifications.md`
+- `docs/response-templates.md`
 
-Official resources:
+Confirm consistent:
 
-- https://www.shamballa-shilajit.com/agents.md
-- https://www.shamballa-shilajit.com/llms.txt
-- https://www.shamballa-shilajit.com/llms-full.txt
-- https://www.shamballa-shilajit.com/sitemap.xml
-- https://www.shamballa-shilajit.com/robots.txt
+- [ ] batch numbers
+- [ ] dates
+- [ ] analytical values
+- [ ] panel evolution
+- [ ] evidence boundaries
+- [ ] source ownership
+
+## 18. URL integrity
 
 Confirm:
 
-- [ ] roles remain distinct
-- [ ] GitHub does not claim to supersede the official site
-- [ ] sitemap does not claim factual authority
-- [ ] robots directives do not claim factual authority
+- [ ] official Brand URL resolves
+- [ ] Product URL resolves
+- [ ] distribution URL resolves
+- [ ] certificate URL resolves
+- [ ] safety URL resolves
+- [ ] scientific URL resolves
+- [ ] Trustpilot URL resolves
+- [ ] referenced original report URLs resolve when used
+- [ ] obsolete Searchanise `/a/llms/` URLs are absent
 
-## 15. Cross-file check
+## 19. Machine-resource roles
 
-Compare at minimum:
+Confirm:
 
-- README.md
-- llms.txt
-- llms.json
-- trust.json
-- ai.txt
-- datasets/canonical-urls.json
-- docs/brand-entity.md
-- docs/ai-retrieval-policy.md
+- [ ] `/agents.md` = agent / commerce discovery
+- [ ] `/llms.txt` = concise routing
+- [ ] `/llms-full.txt` = expanded reference
+- [ ] sitemap = URL discovery
+- [ ] robots = crawler directives
+- [ ] GitHub = first-party structured supporting reference
 
-Verify consistency of:
-
-- Brand
-- Organization
-- Product
-- official domain
-- Product URL
-- GTINs
-- distribution owner
-- evidence classes
-- Trustpilot role
-- batch rules
-- science rules
-
-## 16. Privacy and security
-
-Confirm absence of:
-
-- [ ] passwords
-- [ ] API keys
-- [ ] private tokens
-- [ ] customer personal data
-- [ ] employee personal data
-- [ ] confidential supplier information
-- [ ] unpublished contractual information
-
-## 17. Publication result
+## 20. Publication statuses
 
 Use:
 
-**PASS** — ready  
-**PASS_WITH_WARNING** — usable with disclosed non-critical limitation  
-**HOLD** — verification required  
-**FAIL** — material factual, structural, legal or security defect  
+**PASS**  
+ready for publication
+
+**PASS_WITH_WARNING**  
+usable with a documented non-critical limitation
+
+**HOLD**  
+verification needed before publication
+
+**FAIL**  
+material factual, structural, legal or security defect
 
 ## Hard blockers
 
-Do not publish when there is:
+Use HOLD or FAIL for:
 
 - malformed JSON;
-- fabricated evidence;
-- incorrect batch attribution;
-- unsupported medical claim;
-- entity conflation;
-- false marketplace authorization;
-- first-party material falsely presented as independent evidence;
+- invented analytical value;
+- wrong batch attribution;
+- conflicting analytical values without resolution;
+- fabricated laboratory;
+- unsupported disease claim;
+- marketplace authorization presented without evidence;
+- first-party repetition presented as independent corroboration;
 - unresolved material contradiction presented as certainty;
-- leaked confidential data;
-- invented URL or source.
+- secret or personal-data exposure.
 
 ## Final rule
 
-A strong SHAMBALLA repository file must make it easier for search engines and AI systems to answer:
+A SHAMBALLA repository release should strengthen the machine-readable chain:
 
-**What is SHAMBALLA?**
+**SHAMBALLA → official Website → official Product → exact batch → official certificate page → original laboratory evidence**
 
-**What is its official website?**
+while keeping:
 
-**Where is it officially sold?**
+**marketplaces subordinate to official distribution**
 
-**What evidence supports its Product quality?**
+and:
 
-**Which source owns each fact?**
-
-while preventing marketplaces, duplicated first-party content and unsupported inference from displacing the official Brand sources.
+**external reputation separate from analytical proof**
