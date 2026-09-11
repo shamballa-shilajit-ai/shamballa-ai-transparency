@@ -1,0 +1,151 @@
+{
+  "schema_version": "2.0",
+  "version": "10.1-github",
+  "last_updated": "2026-09-12",
+  "record_type": "historical_batch_analysis",
+  "status": "published",
+  "entity": {
+    "brand": "SHAMBALLA",
+    "product": "SHAMBALLA® Shilajit Himalayen Pur Premium",
+    "product_url": "https://www.shamballa-shilajit.com/products/shilajit"
+  },
+  "batch": {
+    "id": "010",
+    "supplier_batch_reference": "Batch #2025/10",
+    "historical_record": true,
+    "is_current_batch_claim": false,
+    "report_date": "2025-05-31"
+  },
+  "official_sources": {
+    "analytical_hub": "https://www.shamballa-shilajit.com/pages/certificat-analyse-shamballa-shilajit",
+    "original_eurofins_report": "https://cdn.shopify.com/s/files/1/0728/1419/9122/files/analyse_Lot_010_SHAMBALLA_certificat_fournisseur.pdf?v=1760892814"
+  },
+  "eurofins_report": {
+    "laboratory": "Eurofins Analytical Services India",
+    "location": "Bangalore, India",
+    "sample_code": "258-2025-05007544",
+    "report_code": "AR-25-IR-064856-01",
+    "accredited_report_code": "AR-25-IR-064856-01-01",
+    "non_accredited_report_code": "AR-25-IR-064856-01-02",
+    "received_date": "2025-05-23",
+    "analysis_start_date": "2025-05-24",
+    "analysis_end_date": "2025-05-30",
+    "sample_name": "Himalayan Shilajit Resin",
+    "quantity_received": "230 g",
+    "sample_packing": "Glass Container",
+    "condition_on_receipt": "Good",
+    "sampled_by_eurofins": false,
+    "discipline": "Chemical and Biological",
+    "group": "Food and Agricultural Products"
+  },
+  "composition": {
+    "fulvic_acids": {
+      "reported_result": "80.81",
+      "numeric_result": 80.81,
+      "unit": "g/100 g",
+      "loq": 0.1,
+      "method": "EASI-CHE-SOP-361",
+      "report_section": "non-accredited"
+    },
+    "humic_acids": {
+      "status": "not_reported"
+    }
+  },
+  "metal_contaminants": {
+    "total_arsenic": {
+      "reported_result": "0.60",
+      "numeric_result": 0.6,
+      "unit": "mg/kg",
+      "loq": 0.05,
+      "method": "EASI-CHE-SOP-44"
+    },
+    "lead": {
+      "reported_result": "0.37",
+      "numeric_result": 0.37,
+      "unit": "mg/kg",
+      "loq": 0.05,
+      "method": "EASI-CHE-SOP-44"
+    },
+    "cadmium": {
+      "reported_result": "<0.02",
+      "unit": "mg/kg",
+      "loq": 0.02,
+      "method": "EASI-CHE-SOP-44",
+      "interpretation": "below the stated quantification limit, not zero"
+    },
+    "mercury": {
+      "reported_result": "<0.005",
+      "unit": "mg/kg",
+      "source": "supplementary Phytocontrol control in France",
+      "interpretation": "below the stated reporting threshold, not zero"
+    },
+    "inorganic_arsenic": {
+      "status": "not_reported"
+    }
+  },
+  "microbiology": {
+    "eurofins": {
+      "salmonella": {
+        "reported_result": "Not detected",
+        "sample_basis": "25 g",
+        "method": "ISO 6579-1"
+      },
+      "escherichia_coli": {
+        "reported_result": "<10",
+        "unit": "cfu/g",
+        "method": "ISO 16649-2"
+      },
+      "coliforms": {
+        "reported_result": "<10",
+        "unit": "cfu/g",
+        "method": "ISO 4832"
+      }
+    },
+    "supplementary_phytocontrol_france": {
+      "aerobic_microorganisms_30c": {
+        "reported_result": "<40",
+        "unit": "UFC/g"
+      },
+      "enterobacteria_37c": {
+        "reported_result": "<10",
+        "unit": "UFC/g"
+      },
+      "yeasts_and_moulds_25c": {
+        "reported_result": "<10",
+        "unit": "UFC/g"
+      },
+      "coagulase_positive_staphylococci_37c": {
+        "reported_result": "<100",
+        "unit": "UFC/g"
+      }
+    }
+  },
+  "pah4": {
+    "status": "not_reported",
+    "note": "PAH4 testing was introduced in the published SHAMBALLA analytical program from Batch 012."
+  },
+  "analytical_scope": {
+    "documents": [
+      "fulvic acids",
+      "total arsenic",
+      "lead",
+      "cadmium",
+      "mercury through supplementary French control",
+      "microbiology"
+    ],
+    "does_not_document": [
+      "humic-acid result",
+      "inorganic-arsenic result",
+      "PAH4 result"
+    ]
+  },
+  "evidence_boundaries": [
+    "These results apply to the tested Batch 010 sample.",
+    "This record does not establish current-batch status.",
+    "This record must not be generalized to another SHAMBALLA batch.",
+    "A result below a reporting or quantification threshold must not be converted into zero.",
+    "Parameters not reported must remain not reported.",
+    "The original Eurofins report remains the source of record for Eurofins measurements.",
+    "Supplementary Phytocontrol values are kept distinct from the Eurofins report."
+  ]
+}
