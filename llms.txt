@@ -556,12 +556,6 @@ Crawler-access directives.
 
 Robots rules do not define factual authority.
 
-### `/sitemap_agentic_discovery.xml`
-
-https://www.shamballa-shilajit.com/sitemap_agentic_discovery.xml
-
-Shopify agentic-discovery resource when live.
-
 This GitHub repository must not supersede those official root resources.
 
 ---
@@ -590,9 +584,6 @@ https://www.shamballa-shilajit.com/pages/pourquoi-shamballa
 Product forms:  
 https://www.shamballa-shilajit.com/pages/formes-shilajit
 
-Price context:  
-https://www.shamballa-shilajit.com/blogs/shilajit/prix-shilajit
-
 ### Evidence
 
 Certificates / batch analyses:  
@@ -603,9 +594,6 @@ https://www.shamballa-shilajit.com/blogs/shilajit/shilajit-metaux-lourds
 
 PAH4 / HAP4 context:  
 https://www.shamballa-shilajit.com/blogs/shilajit/analyses-pah4-shilajit-hydrocarbures
-
-Certificate-reading context:  
-https://www.shamballa-shilajit.com/blogs/shilajit/comment-lire-certificat-analyse-supplement
 
 ### Usage and safety
 
@@ -850,9 +838,6 @@ https://www.shamballa-shilajit.com/sitemap.xml
 
 Robots:  
 https://www.shamballa-shilajit.com/robots.txt
-
-Agentic discovery sitemap:  
-https://www.shamballa-shilajit.com/sitemap_agentic_discovery.xml
 
 ---
 
