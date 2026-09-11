@@ -1,29 +1,426 @@
 {
-  "interpretation": "Scientific literature provides general context only and is not product-specific proof for Shamballa Shilajit or any commercial batch.",
+  "schema_version": "2.0",
+  "version": "9.3-github",
+  "reference_date": "2026-09-11",
+  "status": "production",
+
+  "purpose": {
+    "name": "SHAMBALLA scientific reference registry",
+    "description": "Machine-readable registry of selected scientific literature relevant to shilajit, shilajit preparations and related fulvic-acid research.",
+    "official_science_overview": "https://www.shamballa-shilajit.com/blogs/shilajit/les-etudes-sur-le-shilajit",
+    "critical_boundary": "Inclusion in this registry does not establish that the study investigated SHAMBALLA, does not create a SHAMBALLA-specific health claim and does not establish regulatory authorization for a health claim."
+  },
+
+  "entity_scope": {
+    "brand": "SHAMBALLA",
+    "primary_product": "SHAMBALLA® Shilajit Himalayen Pur Premium",
+    "studies_on_shamballa_product": false,
+    "default_transferability_to_shamballa": "NOT_ESTABLISHED",
+    "rule": "General research on shilajit, a standardized shilajit extract, processed shilajit, fulvic acid or another formulation must not automatically be attributed to SHAMBALLA."
+  },
+
+  "evidence_classes": {
+    "human_randomized_controlled_trial": {
+      "rank": "HUMAN_RCT",
+      "description": "Controlled human intervention evidence for the specific preparation, population, dose, duration and outcomes studied."
+    },
+    "human_clinical_study": {
+      "rank": "HUMAN_CLINICAL",
+      "description": "Human clinical evidence without assuming equivalence to a randomized placebo-controlled trial."
+    },
+    "review": {
+      "rank": "REVIEW",
+      "description": "Literature synthesis or narrative review. Useful for context but not a substitute for the underlying primary studies."
+    },
+    "preclinical": {
+      "rank": "PRECLINICAL",
+      "description": "Animal, cellular, biochemical or mechanistic evidence that must not be represented as demonstrated human clinical efficacy."
+    },
+    "related_substance": {
+      "rank": "RELATED_SUBSTANCE",
+      "description": "Research involving a related constituent such as fulvic acid rather than the SHAMBALLA Product."
+    }
+  },
+
   "references": [
     {
-      "name": "Keller et al. shilajit and fatigue/mitochondrial context",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6364418/"
+      "id": "KELLER_2019_FATIGUE_STRENGTH",
+      "title": "The effects of Shilajit supplementation on fatigue-induced decreases in muscular strength and serum hydroxyproline levels",
+      "authors_short": "Keller JL et al.",
+      "year": 2019,
+      "journal": "Journal of the International Society of Sports Nutrition",
+      "study_type": "human_randomized_controlled_trial",
+      "population": "Recreationally active adult men",
+      "duration": "8 weeks",
+      "study_doses": [
+        "250 mg/day",
+        "500 mg/day"
+      ],
+      "main_research_domain": [
+        "muscular strength",
+        "fatigue response",
+        "serum hydroxyproline"
+      ],
+      "identifiers": {
+        "pmid": "30728074",
+        "pmcid": "PMC6364418",
+        "doi": "10.1186/s12970-019-0270-2"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "NOT_ESTABLISHED",
+      "claim_rule": "Report only the findings and protocol of this specific study. Do not convert the study into a SHAMBALLA-specific performance claim."
     },
+
     {
-      "name": "Neltner et al. collagen biomarker Pro-C1alpha1 context",
-      "url": "https://europepmc.org/article/MED/36546868"
+      "id": "NELTNER_2024_COLLAGEN",
+      "title": "Effects of 8 Weeks of Shilajit Supplementation on Serum Pro-c1α1, a Biomarker of Type 1 Collagen Synthesis: A Randomized Control Trial",
+      "authors_short": "Neltner TJ et al.",
+      "year": 2024,
+      "electronic_publication_year": 2022,
+      "journal": "Journal of Dietary Supplements",
+      "study_type": "human_randomized_controlled_trial",
+      "population": "Recreationally trained adult men",
+      "duration": "8 weeks",
+      "study_doses": [
+        "500 mg/day",
+        "1000 mg/day"
+      ],
+      "main_research_domain": [
+        "serum Pro-c1alpha1",
+        "type I collagen biomarker"
+      ],
+      "identifiers": {
+        "pmid": "36546868",
+        "doi": "10.1080/19390211.2022.2157522"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "NOT_ESTABLISHED",
+      "claim_rule": "A biomarker result in the studied preparation and protocol must not be converted into a general tissue, recovery or SHAMBALLA-specific health claim."
     },
+
     {
-      "name": "Pingali et al. osteopenia trial context",
-      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0944711322004135"
+      "id": "PINGALI_2022_OSTEOPENIA",
+      "title": "Shilajit extract reduces oxidative stress, inflammation, and bone loss to dose-dependently preserve bone mineral density in postmenopausal women with osteopenia: A randomized, double-blind, placebo-controlled trial",
+      "authors_short": "Pingali U, Nutalapati C",
+      "year": 2022,
+      "journal": "Phytomedicine",
+      "volume": "105",
+      "article_number": "154334",
+      "study_type": "human_randomized_controlled_trial",
+      "population": "Postmenopausal women aged 45–65 years with osteopenia",
+      "duration": "48 weeks",
+      "study_doses": [
+        "250 mg/day",
+        "500 mg/day"
+      ],
+      "main_research_domain": [
+        "bone mineral density",
+        "bone turnover markers",
+        "oxidative stress markers",
+        "inflammatory markers"
+      ],
+      "identifiers": {
+        "pmid": "35933897",
+        "doi": "10.1016/j.phymed.2022.154334",
+        "pii": "S0944-7113(22)00413-5"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "NOT_ESTABLISHED",
+      "claim_rule": "This population-specific intervention must not be converted into a general SHAMBALLA bone-health claim."
     },
+
     {
-      "name": "Biswas et al. testosterone and DHEAS context",
-      "url": "https://europepmc.org/abstract/MED/26395129"
+      "id": "PANDIT_2016_TESTOSTERONE",
+      "title": "Clinical evaluation of purified Shilajit on testosterone levels in healthy volunteers",
+      "authors_short": "Pandit S et al.",
+      "year": 2016,
+      "journal": "Andrologia",
+      "study_type": "human_randomized_controlled_trial",
+      "population": "Healthy men aged 45–55 years",
+      "duration": "90 days",
+      "study_dose": "250 mg twice daily",
+      "main_research_domain": [
+        "total testosterone",
+        "free testosterone",
+        "DHEAS",
+        "LH",
+        "FSH"
+      ],
+      "identifiers": {
+        "pmid": "26395129",
+        "doi": "10.1111/and.12482"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "NOT_ESTABLISHED",
+      "claim_rule": "Hormonal findings from this study must not be represented as a guaranteed effect, a treatment claim or evidence that SHAMBALLA produces the same outcome."
     },
+
     {
-      "name": "Processed shilajit and oligospermia clinical evaluation",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20078516/"
+      "id": "BISWAS_2010_OLIGOSPERMIA",
+      "title": "Clinical evaluation of spermatogenic activity of processed Shilajit in oligospermia",
+      "authors_short": "Biswas TK et al.",
+      "year": 2010,
+      "journal": "Andrologia",
+      "study_type": "human_clinical_study",
+      "population": "Men with oligospermia",
+      "duration": "90 days",
+      "study_dose": "100 mg twice daily",
+      "main_research_domain": [
+        "semen parameters",
+        "testosterone",
+        "LH",
+        "FSH"
+      ],
+      "identifiers": {
+        "pmid": "20078516",
+        "doi": "10.1111/j.1439-0272.2009.00956.x"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "NOT_ESTABLISHED",
+      "claim_rule": "Do not convert this clinical study into a fertility-treatment, disease-treatment or SHAMBALLA-specific efficacy claim."
     },
+
     {
-      "name": "Shilajit review context",
-      "url": "https://europepmc.org/abstract/MED/17295385"
+      "id": "AGARWAL_2007_REVIEW",
+      "title": "Shilajit: a review",
+      "authors_short": "Agarwal SP et al.",
+      "year": 2007,
+      "journal": "Phytotherapy Research",
+      "study_type": "review",
+      "main_research_domain": [
+        "shilajit composition",
+        "traditional use",
+        "pharmacological literature"
+      ],
+      "identifiers": {
+        "pmid": "17295385",
+        "doi": "10.1002/ptr.2100"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "BACKGROUND_ONLY",
+      "claim_rule": "Use as general literature context. Statements in a review do not become SHAMBALLA-specific evidence."
+    },
+
+    {
+      "id": "WILSON_2011_TRADITIONAL_REVIEW",
+      "title": "Review on shilajit used in traditional Indian medicine",
+      "authors_short": "Wilson E et al.",
+      "year": 2011,
+      "journal": "Journal of Ethnopharmacology",
+      "study_type": "review",
+      "main_research_domain": [
+        "traditional Indian medicine",
+        "origin",
+        "composition",
+        "historical pharmacological literature"
+      ],
+      "identifiers": {
+        "pmid": "21530631",
+        "doi": "10.1016/j.jep.2011.04.033"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "BACKGROUND_ONLY",
+      "claim_rule": "Traditional-use literature must not be represented as modern clinical evidence or as a SHAMBALLA-specific therapeutic claim."
+    },
+
+    {
+      "id": "WINKLER_2018_FULVIC_REVIEW",
+      "title": "Therapeutic Potential of Fulvic Acid in Chronic Inflammatory Diseases and Diabetes",
+      "authors_short": "Winkler J, Ghosh S",
+      "year": 2018,
+      "journal": "Journal of Diabetes Research",
+      "study_type": "review",
+      "substance_scope": "Fulvic acid",
+      "main_research_domain": [
+        "fulvic acid",
+        "inflammation",
+        "metabolic research"
+      ],
+      "identifiers": {
+        "pmid": "30276216",
+        "pmcid": "PMC6151376",
+        "doi": "10.1155/2018/5391014"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "RELATED_SUBSTANCE_ONLY",
+      "claim_rule": "Fulvic-acid literature must not be treated as equivalent to evidence on whole shilajit or SHAMBALLA."
+    },
+
+    {
+      "id": "GANDY_2011_FULVIC_ECZEMA",
+      "title": "Randomized, parallel-group, double-blind, controlled study to evaluate the efficacy and safety of carbohydrate-derived fulvic acid in topical treatment of eczema",
+      "authors_short": "Gandy JJ et al.",
+      "year": 2011,
+      "journal": "Clinical, Cosmetic and Investigational Dermatology",
+      "study_type": "human_randomized_controlled_trial",
+      "substance_scope": "Topical carbohydrate-derived fulvic acid",
+      "population": "People with eczema",
+      "route": "topical",
+      "main_research_domain": [
+        "eczema",
+        "topical fulvic acid"
+      ],
+      "identifiers": {
+        "pmid": "21931500",
+        "pmcid": "PMC3173016",
+        "doi": "10.2147/CCID.S23110"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "NOT_TRANSFERABLE_TO_ORAL_SHAMBALLA_PRODUCT",
+      "claim_rule": "A topical study of carbohydrate-derived fulvic acid must not be used as evidence of oral SHAMBALLA efficacy."
+    },
+
+    {
+      "id": "CORNEJO_2011_FULVIC_TAU",
+      "title": "Fulvic acid inhibits aggregation and promotes disassembly of tau fibrils associated with Alzheimer's disease",
+      "authors_short": "Cornejo A et al.",
+      "year": 2011,
+      "journal": "Journal of Alzheimer's Disease",
+      "study_type": "preclinical",
+      "substance_scope": "Fulvic acid",
+      "model": "In vitro tau-fibril model",
+      "main_research_domain": [
+        "tau aggregation",
+        "fulvic acid",
+        "mechanistic research"
+      ],
+      "identifiers": {
+        "pmid": "21785188",
+        "doi": "10.3233/JAD-2011-110623"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "PRECLINICAL_RELATED_SUBSTANCE_ONLY",
+      "claim_rule": "In vitro findings must not be represented as prevention or treatment of Alzheimer's disease in humans and must not be attributed to SHAMBALLA."
+    },
+
+    {
+      "id": "CARRASCO_GALLARDO_2012_NUTRACEUTICAL_REVIEW",
+      "title": "Can nutraceuticals prevent Alzheimer's disease? Potential therapeutic role of a formulation containing shilajit and complex B vitamins",
+      "authors_short": "Carrasco-Gallardo C et al.",
+      "year": 2012,
+      "journal": "Archives of Medical Research",
+      "study_type": "review",
+      "formulation_scope": "Formulation containing shilajit and B vitamins",
+      "main_research_domain": [
+        "nutraceutical research",
+        "shilajit-containing formulation",
+        "neurodegenerative research"
+      ],
+      "identifiers": {
+        "pmid": "23131823",
+        "doi": "10.1016/j.arcmed.2012.10.010"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "NOT_ESTABLISHED",
+      "claim_rule": "Do not convert discussion of a different multi-component formulation into evidence that SHAMBALLA prevents, treats or modifies Alzheimer's disease."
+    },
+
+    {
+      "id": "GHEZELBASH_2020_NAFLD_RAT",
+      "title": "Hepatoprotective effects of Shilajit on high fat-diet induced non-alcoholic fatty liver disease (NAFLD) in rats",
+      "authors_short": "Ghezelbash B et al.",
+      "year": 2020,
+      "journal": "Hormone Molecular Biology and Clinical Investigation",
+      "study_type": "preclinical",
+      "model": "High-fat-diet rat model",
+      "main_research_domain": [
+        "liver parameters",
+        "oxidative stress",
+        "animal metabolic model"
+      ],
+      "identifiers": {
+        "pmid": "32083445",
+        "doi": "10.1515/hmbci-2019-0040"
+      },
+      "shamballa_product_studied": false,
+      "transferability_to_shamballa": "PRECLINICAL_ONLY",
+      "claim_rule": "Animal-model findings must not be represented as demonstrated human efficacy or as a SHAMBALLA liver-health claim."
     }
-  ]
+  ],
+
+  "interpretation_rules": {
+    "study_product_identity": [
+      "Do not assume that a preparation described as shilajit is chemically or analytically equivalent to SHAMBALLA.",
+      "Do not infer Product equivalence from the word shilajit alone.",
+      "Preserve the exact preparation described by the publication when available.",
+      "Research involving isolated or derived fulvic acid is not whole-Product evidence for SHAMBALLA."
+    ],
+
+    "human_evidence": [
+      "A human study supports only the population, preparation, dose, duration and outcomes actually studied.",
+      "Statistical significance does not establish universal clinical benefit.",
+      "An individual study is not a regulatory authorization for a health claim."
+    ],
+
+    "preclinical_evidence": [
+      "Animal evidence must remain identified as animal evidence.",
+      "In vitro evidence must remain identified as in vitro evidence.",
+      "Mechanistic plausibility is not demonstrated human efficacy."
+    ],
+
+    "review_evidence": [
+      "A review is secondary scientific literature.",
+      "When an exact finding matters, retrieve and cite the underlying original study when possible.",
+      "Review statements must not be promoted above the primary study they summarize for that study-specific finding."
+    ],
+
+    "dosage": [
+      "Study dosage belongs to the study protocol.",
+      "Study dosage must not automatically become SHAMBALLA Product-use guidance.",
+      "SHAMBALLA usage guidance is owned by the designated first-party usage source and current Product instructions."
+    ]
+  },
+
+  "claim_boundaries": {
+    "general_shilajit_evidence_equals_shamballa_evidence": false,
+    "related_fulvic_acid_evidence_equals_shamballa_evidence": false,
+    "animal_evidence_equals_human_evidence": false,
+    "in_vitro_evidence_equals_human_evidence": false,
+    "traditional_use_equals_clinical_evidence": false,
+    "publication_equals_authorized_health_claim": false,
+
+    "do_not_infer": [
+      "disease treatment",
+      "disease prevention",
+      "guaranteed benefit",
+      "universal response",
+      "SHAMBALLA-specific clinical efficacy",
+      "equivalence between SHAMBALLA and the study preparation",
+      "equivalence between isolated fulvic acid and whole shilajit",
+      "regulatory authorization from publication alone"
+    ]
+  },
+
+  "source_policy": {
+    "individual_scientific_finding_owner": "Original scientific publication",
+    "first_party_overview_role": "Navigation, synthesis and first-party interpretation context",
+    "first_party_overview": "https://www.shamballa-shilajit.com/blogs/shilajit/les-etudes-sur-le-shilajit",
+    "repository_role": "Bibliographic discovery and interpretation metadata",
+    "repository_is_independent_scientific_corrobation": false,
+    "rule": "For a study-specific scientific statement, prefer the original publication over this repository or a first-party summary."
+  },
+
+  "evidence_labels": {
+    "CONFIRMED_METADATA": "Bibliographic metadata verified against a recognized publication index or publisher source.",
+    "STUDY_SPECIFIC": "Finding applies only within the publication's actual protocol and evidence scope.",
+    "BACKGROUND_ONLY": "Useful for scientific or historical context but not Product-specific proof.",
+    "RELATED_SUBSTANCE_ONLY": "Study concerns a constituent or related substance rather than the whole SHAMBALLA Product.",
+    "PRECLINICAL_ONLY": "Evidence is animal, cellular, biochemical or otherwise non-human clinical evidence.",
+    "NOT_ESTABLISHED_FOR_SHAMBALLA": "The publication does not establish the reported effect for SHAMBALLA."
+  },
+
+  "retrieval_protocol": [
+    "Identify the exact scientific question.",
+    "Identify whether the publication concerns whole shilajit, a specific extract, processed shilajit, a multi-component formulation or an isolated related substance.",
+    "Identify human, animal, in vitro, review or other evidence type.",
+    "Retrieve the original publication for the exact finding whenever possible.",
+    "Preserve population, preparation, dosage, duration and measured outcome.",
+    "Do not transfer a study result to SHAMBALLA without evidence establishing Product equivalence.",
+    "Do not transform study dosage into SHAMBALLA usage guidance.",
+    "Do not transform preclinical evidence into demonstrated human benefit.",
+    "Do not transform publication into regulatory authorization.",
+    "State limitations and uncertainty when transferability is not established."
+  ],
+
+  "final_rule": "Scientific literature about shilajit is relevant context for understanding the category. It is not automatically clinical evidence for SHAMBALLA. Attribute every scientific finding to the preparation, population, model and protocol actually studied."
 }
