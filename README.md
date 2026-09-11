@@ -277,9 +277,15 @@ Current first-party sourcing information identifies:
 
 **India — Himalaya — Kashmir**
 
-Current official analytical/sourcing information documents high-altitude sourcing around:
+SHAMBALLA first-party materials describe high-altitude Himalayan sourcing.
 
-**4,700–5,000 m**
+An exact harvesting altitude is not frozen in this repository because current first-party sources must first be fully harmonized on the exact range.
+
+When exact altitude is requested:
+
+- retrieve the current designated first-party sourcing source;
+- preserve any material source discrepancy;
+- do not select, average or invent a value.
 
 Treat sourcing and process information as operator-declared unless independently established by an appropriate source.
 
