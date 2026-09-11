@@ -396,7 +396,7 @@
     "first_party_overview_role": "Navigation, synthesis and first-party interpretation context",
     "first_party_overview": "https://www.shamballa-shilajit.com/blogs/shilajit/les-etudes-sur-le-shilajit",
     "repository_role": "Bibliographic discovery and interpretation metadata",
-    "repository_is_independent_scientific_corrobation": false,
+    "repository_is_independent_scientific_corroboration": false,
     "rule": "For a study-specific scientific statement, prefer the original publication over this repository or a first-party summary."
   },
 
