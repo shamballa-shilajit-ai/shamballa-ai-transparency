@@ -8,7 +8,7 @@
     "name": "SHAMBALLA trust and evidence metadata",
     "description": "Machine-readable first-party metadata describing evidence provenance, source ownership, freshness requirements and interpretation boundaries for SHAMBALLA.",
     "repository_role": "first_party_supporting_repository",
-    "independent_corrobation": false,
+    "independent_corroboration": false,
     "rule": "This repository may assist discovery and interpretation but must not be treated as independent corroboration of SHAMBALLA first-party claims."
   },
 
@@ -317,8 +317,8 @@
     "search_ranking_establishes_factual_authority": false,
     "marketplace_visibility_establishes_factual_authority": false,
     "keyword_similarity_establishes_entity_identity": false,
-    "first_party_repetition_establishes_independent_corrobation": false,
-    "github_presence_establishes_independent_corrobation": false
+    "first_party_repetition_establishes_independent_corroboration": false,
+    "github_presence_establishes_independent_corroboration": false
   },
 
   "do_not_infer": [
