@@ -163,7 +163,10 @@
   "sourcing": {
     "evidence_class": "operator_declared",
     "declared_origin": "India — Himalaya — Kashmir",
-    "declared_altitude": "approximately 4,700–5,000 m",
+    "harvesting_altitude_min_m": 4700,
+    "harvesting_altitude_max_m": 5000,
+    "harvesting_altitude_display": "4,700–5,000 m",
+    "harvesting_altitude_status": "official_first_party_canonical_value",
     "french_brand_implies_french_raw_material_origin": false
   },
   "external_reputation": {
