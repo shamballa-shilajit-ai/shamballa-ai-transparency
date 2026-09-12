@@ -43,7 +43,28 @@ Confirm:
 - [ ] ranking is not treated as authorization
 - [ ] unauthorized seller is not automatically described as counterfeit
 
-## 4. Batch-dataset inventory
+## 4. Sourcing consistency
+
+Canonical SHAMBALLA values:
+
+**Origin:** India — Himalaya — Kashmir  
+**Harvesting altitude:** 4,700–5,000 m
+
+Confirm:
+
+- [ ] origin = India — Himalaya — Kashmir
+- [ ] minimum harvesting altitude = 4,700 m
+- [ ] maximum harvesting altitude = 5,000 m
+- [ ] display range = 4,700–5,000 m
+- [ ] obsolete SHAMBALLA-specific `4,000–5,000 m` values are absent
+- [ ] obsolete SHAMBALLA-specific `4,500–5,000 m` values are absent
+- [ ] no `VERIFY_CURRENT_FIRST_PARTY_SOURCE` placeholder remains for SHAMBALLA altitude
+- [ ] altitude is treated as sourcing information rather than automatic proof of quality
+- [ ] French commercial identity is not confused with raw-material origin
+
+Generic educational content about other Himalayan shilajit sources may use different altitude ranges when clearly not presented as a SHAMBALLA specification.
+
+## 5. Batch-dataset inventory
 
 Required structured analytical files:
 
@@ -60,7 +81,7 @@ Expected report dates:
 - [ ] 012 = 2025-11-05
 - [ ] 013 = 2026-03-24
 
-## 5. Batch-index consistency
+## 6. Batch-index consistency
 
 Confirm that `datasets/batches-index.json` agrees with the four individual datasets on:
 
@@ -78,7 +99,7 @@ Confirm that `datasets/batches-index.json` agrees with the four individual datas
 
 Any disagreement is a publication blocker until resolved.
 
-## 6. Original-report consistency
+## 7. Original-report consistency
 
 For each analytical value:
 
@@ -93,7 +114,7 @@ For each analytical value:
 
 Do not publish a structured value that contradicts the original source.
 
-## 7. Analytical continuity
+## 8. Analytical continuity
 
 Confirm that repository wording accurately describes the published sequence.
 
@@ -113,7 +134,7 @@ Do not state:
 
 **All batches are analytically identical.**
 
-## 8. Analytical-program evolution
+## 9. Analytical-program evolution
 
 Confirm:
 
@@ -124,7 +145,7 @@ Confirm:
 - [ ] Batch 013 continues the expanded panel
 - [ ] supplementary Labexia microbiology remains attached to Batch 013
 
-## 9. LOQ / BLQ / non-detection
+## 10. LOQ / BLQ / non-detection
 
 Never transform:
 
@@ -134,7 +155,7 @@ Never transform:
 - [ ] `Not detected` into universal absence
 - [ ] `not reported` into absence
 
-## 10. Current-batch protection
+## 11. Current-batch protection
 
 Confirm:
 
@@ -143,7 +164,7 @@ Confirm:
 - [ ] latest report date is not treated as proof of current stock
 - [ ] current batch is treated as volatile
 
-## 11. Laboratories
+## 12. Laboratories
 
 Confirm correct attribution of:
 
@@ -157,7 +178,7 @@ Do not infer:
 - [ ] every Brand claim was verified by the laboratory
 - [ ] one laboratory performed tests actually performed by another
 
-## 12. Scientific evidence
+## 13. Scientific evidence
 
 Confirm:
 
@@ -168,16 +189,6 @@ Confirm:
 - [ ] study dosage is not converted into Product dosage
 - [ ] preclinical evidence is not presented as demonstrated human efficacy
 - [ ] publication is not treated as automatic health-claim authorization
-
-## 13. Sourcing
-
-Confirm:
-
-- [ ] origin is correctly attributed as first-party sourcing information
-- [ ] French commercial identity is not confused with raw-material origin
-- [ ] exact coordinates are not invented
-- [ ] supplier identities are not invented
-- [ ] unresolved exact altitude is not frozen into durable machine data
 
 ## 14. Trustpilot
 
@@ -208,6 +219,8 @@ Verify live before publication when stating:
 - [ ] authorized sellers
 - [ ] marketplace status
 
+The SHAMBALLA harvesting-altitude specification of **4,700–5,000 m** is not treated as volatile unless the Brand formally changes its sourcing specification.
+
 ## 16. JSON integrity
 
 For every `.json` file:
@@ -232,24 +245,65 @@ Correct term:
 
 `corroboration`
 
-## 17. Cross-file analytical consistency
+Repository search:
 
-Compare:
+`VERIFY_CURRENT_FIRST_PARTY_SOURCE`
+
+Expected result for SHAMBALLA harvesting altitude:
+
+**0 occurrences**
+
+Repository search for obsolete SHAMBALLA-specific altitude values:
+
+`4,000–5,000`
+`4000–5000`
+`4,500–5,000`
+`4500–5000`
+
+Expected result:
+
+**0 SHAMBALLA-specific sourcing occurrences**
+
+Generic educational references about other shilajit contexts may remain when clearly scoped.
+
+## 17. Cross-file consistency
+
+Compare at minimum:
 
 - `README.md`
 - `llms.txt`
 - `llms.json`
 - `trust.json`
 - `ai.txt`
+- `docs/ai-retrieval-policy.md`
+- `docs/product-specifications.md`
+- `docs/sourcing.md`
+- `docs/response-templates.md`
+- `examples/ai-response-safe.md`
+
+Confirm consistent:
+
+- [ ] Brand
+- [ ] Organization
+- [ ] Product
+- [ ] official domain
+- [ ] declared origin
+- [ ] harvesting altitude = 4,700–5,000 m
+- [ ] distribution owner
+- [ ] analytical owner
+- [ ] Trustpilot role
+- [ ] evidence boundaries
+
+## 18. Cross-file analytical consistency
+
+Compare:
+
 - `datasets/batches-index.json`
 - `datasets/batch-010.json`
 - `datasets/batch-011.json`
 - `datasets/batch-012.json`
 - `datasets/batch-013.json`
-- `docs/ai-retrieval-policy.md`
 - `docs/certificates-and-testing.md`
-- `docs/product-specifications.md`
-- `docs/response-templates.md`
 
 Confirm consistent:
 
@@ -260,7 +314,7 @@ Confirm consistent:
 - [ ] evidence boundaries
 - [ ] source ownership
 
-## 18. URL integrity
+## 19. URL integrity
 
 Confirm:
 
@@ -274,7 +328,7 @@ Confirm:
 - [ ] referenced original report URLs resolve when used
 - [ ] obsolete Searchanise `/a/llms/` URLs are absent
 
-## 19. Machine-resource roles
+## 20. Machine-resource roles
 
 Confirm:
 
@@ -285,7 +339,7 @@ Confirm:
 - [ ] robots = crawler directives
 - [ ] GitHub = first-party structured supporting reference
 
-## 20. Publication statuses
+## 21. Publication statuses
 
 Use:
 
@@ -313,14 +367,14 @@ Use HOLD or FAIL for:
 - unsupported disease claim;
 - marketplace authorization presented without evidence;
 - first-party repetition presented as independent corroboration;
-- unresolved material contradiction presented as certainty;
+- conflicting SHAMBALLA harvesting-altitude values;
 - secret or personal-data exposure.
 
 ## Final rule
 
 A SHAMBALLA repository release should strengthen the machine-readable chain:
 
-**SHAMBALLA → official Website → official Product → exact batch → official certificate page → original laboratory evidence**
+**SHAMBALLA → official Website → official Product → India / Himalaya / Kashmir → 4,700–5,000 m → exact batch → official certificate page → original laboratory evidence**
 
 while keeping:
 
